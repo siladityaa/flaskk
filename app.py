@@ -40,7 +40,7 @@ def top_tracks_trends():
     return render_template('index.html', tracks=updated_tracks)
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0' )
 
 
 
