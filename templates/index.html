@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 10 Tracks Trends</title>
+</head>
+<body>
+	<h1>Top 10 Tracks Trends</h1>
+	<table>
+		<tr>
+			<th>Rank</th>
+			<th>Track Name</th>
+			<th>Trend</th>
+		</tr>
+		{% for track in tracks %}
+		<tr>
+			<td>{{ track.rank }}</td>
+			<td>{{ track.name }}</td>
+			<td>{{ track.trend }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
